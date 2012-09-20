@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework.Diegose", "EntityFramework.Diegose\EntityFramework.Diegose.csproj", "{52C2C786-5FC9-4C24-87CD-4ABA7DEC279E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework.Diegose.Test", "EntityFramework.Diegose.Test\EntityFramework.Diegose.Test.csproj", "{81B76E75-36A5-4793-BD47-6228110A47F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{92E065BB-DED1-459C-9214-B41CE5135A86}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52C2C786-5FC9-4C24-87CD-4ABA7DEC279E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C2C786-5FC9-4C24-87CD-4ABA7DEC279E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C2C786-5FC9-4C24-87CD-4ABA7DEC279E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C2C786-5FC9-4C24-87CD-4ABA7DEC279E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81B76E75-36A5-4793-BD47-6228110A47F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B76E75-36A5-4793-BD47-6228110A47F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B76E75-36A5-4793-BD47-6228110A47F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B76E75-36A5-4793-BD47-6228110A47F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
