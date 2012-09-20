@@ -48,12 +48,19 @@
   <ItemGroup>
     <Compile Include="Issue1\Fixture.cs" />
     <Compile Include="Issue1\Domain.cs" />
+    <Compile Include="Issue1\MyContext.cs" />
     <Compile Include="Issue1\StandardContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntityFramework.Diegose\EntityFramework.Diegose.csproj">
+      <Project>{52C2C786-5FC9-4C24-87CD-4ABA7DEC279E}</Project>
+      <Name>EntityFramework.Diegose</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
