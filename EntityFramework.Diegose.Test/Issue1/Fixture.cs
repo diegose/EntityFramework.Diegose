@@ -1,9 +1,8 @@
 ﻿using System.Data.Entity.Validation;
 using System.Linq;
-using EntityFramework.Diegose.Test.Issue1;
 using NUnit.Framework;
 
-namespace EntityFramework.Diegose.Test
+namespace EntityFramework.Diegose.Test.Issue1
 {
     [TestFixture]
     public class WhenARequiredReferenceIsNotLoaded
