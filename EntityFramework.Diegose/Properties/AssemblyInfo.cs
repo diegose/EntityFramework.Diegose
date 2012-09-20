@@ -1,14 +1,13 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("EntityFramework.Diegose")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Extensions and improvements for Entity Framework")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Diego Mijelshon")]
 [assembly: AssemblyProduct("EntityFramework.Diegose")]
 [assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
