@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using System.Data.Common;
+using System.Data.Entity;
 using System.Data.Entity.Validation;
 using System.Linq;
 
@@ -23,6 +24,25 @@ namespace EntityFramework.Diegose
                 }
                 return base.SaveChanges();
             }
+        }
+
+        public int ExecuteNonQuery(string sql, object parameters)
+        {
+            var parameterFactory = Database.Connection.CreateCommand();
+            return Database.ExecuteSqlCommand(sql, ConvertParameters(parameters, parameterFactory));
+        }
+
+        private static object[] ConvertParameters(object parameters, DbCommand parameterFactory)
+        {
+            return parameters.GetType().GetProperties()
+                .Select(x =>
+                            {
+                                var parameter = parameterFactory.CreateParameter();
+                                parameter.ParameterName = x.Name;
+                                parameter.Value = x.GetValue(parameters, null);
+                                return (object)parameter;
+                            })
+                .ToArray();
         }
     }
 }
