@@ -50,6 +50,9 @@
     <Compile Include="Issue1\Domain.cs" />
     <Compile Include="Issue1\MyContext.cs" />
     <Compile Include="Issue1\StandardContext.cs" />
+    <Compile Include="Issue2\Domain.cs" />
+    <Compile Include="Issue2\Fixture.cs" />
+    <Compile Include="Issue2\MyContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
